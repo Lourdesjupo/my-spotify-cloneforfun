@@ -33,9 +33,12 @@ html{
 }
 
 .hero {
-  height: 50vh;
+  min-height: 50vh;
   background-color: var(--hero-color);
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 .hero__article{
   margin-left: var(--margin);
@@ -43,20 +46,21 @@ html{
 
 }
 .hero__article--title {
-  font-size: 50px;
+  font-size: 55px;
   color: white;
-  padding-bottom: 10px;
-  padding-top: 100px;
+  padding-bottom: 30px;
+  padding-top: 70px;
 }
 .hero__article--subtitle {
-  font-size: 30px;
+  font-size: 29px;
   color: white;
-  font-weight: 700;
-  padding-bottom: 30px;
+  font-weight: 500;
+  padding-bottom: 15px;
+
 }
 
 .hero__article--button {
-  width:80vw;
+  width:90vw;
   height: 35px;
   background-color: var(--button-primary);
   display: block;
@@ -67,13 +71,24 @@ html{
   color:white;
   text-decoration: none;
   letter-spacing: 2px;
-  font-size: 13px;
+  font-size: 10px;
 }
 .hero__article--disclaimer {
-  font-size: 12px;
-  padding-top: 30px;
+  font-size: 9px;
+  padding-top: 25px;
   color: white;
+  padding-bottom: 30px;
 }
 .brand-identifiers {
-  
+  display: flex;
+      flex-direction: column;
+    align-items: flex-start
 }
+
+.brand-identifiers--title {
+  text-align: center;
+}
+.brand-identifiers--card {
+
+}
+
